@@ -34,6 +34,12 @@ npm i
 node index.js retail ./public/logs/
 ```
 
+In case of IGM, domain will be igm.
+
+```sh
+node index.js igm ./public/logs/
+```
+
 4. A text report (log_report.md) will be generated upon successful execution of the utility.
 <!-- 5. An error handling txt file (error_report.txt) will also be generated to catch all the errors occurred during the execution. -->
 
@@ -72,6 +78,26 @@ _Notes:_
 | on_update_rejected.json (Return_Rejected)   |
 | support.json                                |
 | on_support.json                             |
+
+
+
+
+## IGM
+
+
+| Payloads (Correct Format)   | File Names
+| -------- | -------- |  
+| issue | retail_issue.json |  
+| issue (close) | retail_issue_close.json |  
+| on_issue | retail_on_issue.json|  
+| issue_status | retail_issue_status.json | 
+| on_issue_status | retail_on_issue_status.json|
+| on_issue_status(unsolicited) | retail_on_issue_status(unsolicited).json | 
+| issue (lsp) | lsp_issue.json | 
+| issue (close)(lsp) | lsp_issue_close.json | 
+| on_issue (lsp)| lsp_on_issue.json|  
+| issue_status (lsp)| lsp_issue_status.json | 
+| on_issue_status (lsp)| lsp_on_issue_status.json| 
 
 > Sample payload for search.json is demonstrated below:
 
